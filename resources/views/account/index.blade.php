@@ -1,44 +1,43 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="app-main flex-column flex-row-fluid" id="kt_app_main">
-        <div class="d-flex flex-column flex-column-fluid">
-            <div id="kt_app_toolbar" class="app-toolbar py-3 py-lg-6">
-                <div id="kt_app_toolbar_container" class="app-container container-xxl d-flex flex-stack">
-                    <div class="page-title d-flex flex-column justify-content-center flex-wrap me-3">
-                        <h1 class="page-heading d-flex text-dark fw-bold fs-3 flex-column justify-content-center my-0">
-                            Account Overview</h1>
-                        <ul class="breadcrumb breadcrumb-separatorless fw-semibold fs-7 my-0 pt-1">
-                            <li class="breadcrumb-item text-muted">
-                                <a href="../../demo1/dist/index.html" class="text-muted text-hover-primary">Home</a>
-                            </li>
-                            <li class="breadcrumb-item">
-                                <span class="bullet bg-gray-400 w-5px h-2px"></span>
-                            </li>
-                            <li class="breadcrumb-item text-muted">Account</li>
-                        </ul>
-                    </div>
+    <div class="d-flex flex-column flex-column-fluid">
+        <div id="kt_app_toolbar" class="app-toolbar py-3 py-lg-6">
+            <div id="kt_app_toolbar_container" class="app-container container-xxl d-flex flex-stack">
+                <div class="page-title d-flex flex-column justify-content-center flex-wrap me-3">
+                    <h1 class="page-heading d-flex text-dark fw-bold fs-3 flex-column justify-content-center my-0">
+                        Account Overview</h1>
+                    <ul class="breadcrumb breadcrumb-separatorless fw-semibold fs-7 my-0 pt-1">
+                        <li class="breadcrumb-item text-muted">
+                            <a href="../../demo1/dist/index.html" class="text-muted text-hover-primary">Home</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <span class="bullet bg-gray-400 w-5px h-2px"></span>
+                        </li>
+                        <li class="breadcrumb-item text-muted">Account</li>
+                    </ul>
                 </div>
             </div>
-            <div id="kt_app_content" class="app-content flex-column-fluid">
-                <div id="kt_app_content_container" class="app-container container-xxl">
-                    <div class="card mb-5 mb-xl-10">
-                        <div class="card-body pt-9 pb-0">
-                            <div class="d-flex flex-wrap flex-sm-nowrap mb-3">
-                                <div class="me-7 mb-4">
-                                    <div class="symbol symbol-100px symbol-lg-160px symbol-fixed position-relative">
-                                        <img src="assets/media/avatars/300-1.jpg" alt="image"/>
-                                        <div
-                                            class="position-absolute translate-middle bottom-0 start-100 mb-6 bg-success rounded-circle border border-4 border-body h-20px w-20px"></div>
-                                    </div>
+        </div>
+        <div id="kt_app_content" class="app-content flex-column-fluid">
+            <div id="kt_app_content_container" class="app-container container-xxl">
+                <div class="card mb-5 mb-xl-10">
+                    <div class="card-body pt-9 pb-0">
+                        <div class="d-flex flex-wrap flex-sm-nowrap mb-3">
+                            <div class="me-7 mb-4">
+                                <div class="symbol symbol-100px symbol-lg-160px symbol-fixed position-relative">
+                                    <img src="assets/media/avatars/300-1.jpg" alt="image"/>
+                                    <div
+                                        class="position-absolute translate-middle bottom-0 start-100 mb-6 bg-success rounded-circle border border-4 border-body h-20px w-20px"></div>
                                 </div>
-                                <div class="flex-grow-1">
-                                    <div class="d-flex justify-content-between align-items-start flex-wrap mb-2">
-                                        <div class="d-flex flex-column">
-                                            <div class="d-flex align-items-center mb-2">
-                                                <a href="#" class="text-gray-900 text-hover-primary fs-2 fw-bold me-1">Max
-                                                    Smith</a>
-                                                <a href="#">
+                            </div>
+                            <div class="flex-grow-1">
+                                <div class="d-flex justify-content-between align-items-start flex-wrap mb-2">
+                                    <div class="d-flex flex-column">
+                                        <div class="d-flex align-items-center mb-2">
+                                            <a href="#" class="text-gray-900 text-hover-primary fs-2 fw-bold me-1">Max
+                                                Smith</a>
+                                            <a href="#">
                                                     <span class="svg-icon svg-icon-1 svg-icon-primary">
 																		<svg xmlns="http://www.w3.org/2000/svg"
                                                                              width="24px" height="24px"
@@ -51,15 +50,15 @@
                                                                                 fill="white"/>
 																		</svg>
 																	</span>
-                                                </a>
-                                                <a href="#"
-                                                   class="btn btn-sm btn-light-success fw-bold ms-2 fs-8 py-1 px-3"
-                                                   data-bs-toggle="modal" data-bs-target="#kt_modal_upgrade_plan">Upgrade
-                                                    to Pro</a>
-                                            </div>
-                                            <div class="d-flex flex-wrap fw-semibold fs-6 mb-4 pe-2">
-                                                <a href="#"
-                                                   class="d-flex align-items-center text-gray-400 text-hover-primary me-5 mb-2">
+                                            </a>
+                                            <a href="#"
+                                               class="btn btn-sm btn-light-success fw-bold ms-2 fs-8 py-1 px-3"
+                                               data-bs-toggle="modal" data-bs-target="#kt_modal_upgrade_plan">Upgrade
+                                                to Pro</a>
+                                        </div>
+                                        <div class="d-flex flex-wrap fw-semibold fs-6 mb-4 pe-2">
+                                            <a href="#"
+                                               class="d-flex align-items-center text-gray-400 text-hover-primary me-5 mb-2">
                                                     <span class="svg-icon svg-icon-4 me-1">
 																	<svg width="18" height="18" viewBox="0 0 18 18"
                                                                          fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -86,8 +85,8 @@
                                                                             fill="currentColor"/>
 																	</svg>
 																</span>
-                                                <a href="#"
-                                                   class="d-flex align-items-center text-gray-400 text-hover-primary mb-2">
+                                                    <a href="#"
+                                                       class="d-flex align-items-center text-gray-400 text-hover-primary mb-2">
                                                     <span class="svg-icon svg-icon-4 me-1">
 																	<svg width="24" height="24" viewBox="0 0 24 24"
                                                                          fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -99,81 +98,81 @@
                                                                             fill="currentColor"/>
 																	</svg>
 																</span>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <ul class="nav nav-stretch nav-line-tabs nav-line-tabs-2x border-transparent fs-5 fw-bold">
-                                <li class="nav-item mt-2">
-                                    <a class="nav-link text-active-primary ms-0 me-10 py-5 active"
-                                       href={{route('account.index')}}">Overview</a>
-                                </li>
-                                <li class="nav-item mt-2">
-                                    <a class="nav-link text-active-primary ms-0 me-10 py-5"
-                                       href="{{route('account.setting')}}">Settings</a>
-                                </li>
-                            </ul>
                         </div>
+                        <ul class="nav nav-stretch nav-line-tabs nav-line-tabs-2x border-transparent fs-5 fw-bold">
+                            <li class="nav-item mt-2">
+                                <a class="nav-link text-active-primary ms-0 me-10 py-5 active"
+                                   href={{route('account.index')}}">Overview</a>
+                                </li>
+                                <li class=" nav-item mt-2">
+                                <a class="nav-link text-active-primary ms-0 me-10 py-5"
+                                   href="{{route('account.setting')}}">Settings</a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="card mb-5 mb-xl-10" id="kt_profile_details_view">
-                        <div class="card-header cursor-pointer">
-                            <div class="card-title m-0">
-                                <h3 class="fw-bold m-0">Profile Details</h3>
-                            </div>
-                            <a href="{{route('account.setting')}}"
-                               class="btn btn-sm btn-primary align-self-center">Edit Profile</a>
+                </div>
+                <div class="card mb-5 mb-xl-10" id="kt_profile_details_view">
+                    <div class="card-header cursor-pointer">
+                        <div class="card-title m-0">
+                            <h3 class="fw-bold m-0">Profile Details</h3>
                         </div>
-                        <div class="card-body p-9">
-                            <div class="row mb-7">
-                                <label class="col-lg-4 fw-semibold text-muted">Full Name</label>
-                                <div class="col-lg-8">
-                                    <span class="fw-bold fs-6 text-gray-800">Max Smith</span>
-                                </div>
+                        <a href="{{route('account.setting')}}"
+                           class="btn btn-sm btn-primary align-self-center">Edit Profile</a>
+                    </div>
+                    <div class="card-body p-9">
+                        <div class="row mb-7">
+                            <label class="col-lg-4 fw-semibold text-muted">Full Name</label>
+                            <div class="col-lg-8">
+                                <span class="fw-bold fs-6 text-gray-800">Max Smith</span>
                             </div>
-                            <div class="row mb-7">
-                                <label class="col-lg-4 fw-semibold text-muted">Company</label>
-                                <div class="col-lg-8 fv-row">
-                                    <span class="fw-semibold text-gray-800 fs-6">Keenthemes</span>
-                                </div>
+                        </div>
+                        <div class="row mb-7">
+                            <label class="col-lg-4 fw-semibold text-muted">Company</label>
+                            <div class="col-lg-8 fv-row">
+                                <span class="fw-semibold text-gray-800 fs-6">Keenthemes</span>
                             </div>
-                            <div class="row mb-7">
-                                <label class="col-lg-4 fw-semibold text-muted">Contact Phone
-                                    <i class="fas fa-exclamation-circle ms-1 fs-7" data-bs-toggle="tooltip"
-                                       title="Phone number must be active"></i></label>
-                                <div class="col-lg-8 d-flex align-items-center">
-                                    <span class="fw-bold fs-6 text-gray-800 me-2">044 3276 454 935</span>
-                                    <span class="badge badge-success">Verified</span>
-                                </div>
+                        </div>
+                        <div class="row mb-7">
+                            <label class="col-lg-4 fw-semibold text-muted">Contact Phone
+                                <i class="fas fa-exclamation-circle ms-1 fs-7" data-bs-toggle="tooltip"
+                                   title="Phone number must be active"></i></label>
+                            <div class="col-lg-8 d-flex align-items-center">
+                                <span class="fw-bold fs-6 text-gray-800 me-2">044 3276 454 935</span>
+                                <span class="badge badge-success">Verified</span>
                             </div>
-                            <div class="row mb-7">
-                                <label class="col-lg-4 fw-semibold text-muted">Company Site</label>
-                                <div class="col-lg-8">
-                                    <a href="#"
-                                       class="fw-semibold fs-6 text-gray-800 text-hover-primary">keenthemes.com</a>
-                                </div>
+                        </div>
+                        <div class="row mb-7">
+                            <label class="col-lg-4 fw-semibold text-muted">Company Site</label>
+                            <div class="col-lg-8">
+                                <a href="#"
+                                   class="fw-semibold fs-6 text-gray-800 text-hover-primary">keenthemes.com</a>
                             </div>
-                            <div class="row mb-7">
-                                <label class="col-lg-4 fw-semibold text-muted">Country
-                                    <i class="fas fa-exclamation-circle ms-1 fs-7" data-bs-toggle="tooltip"
-                                       title="Country of origination"></i></label>
-                                <div class="col-lg-8">
-                                    <span class="fw-bold fs-6 text-gray-800">Germany</span>
-                                </div>
+                        </div>
+                        <div class="row mb-7">
+                            <label class="col-lg-4 fw-semibold text-muted">Country
+                                <i class="fas fa-exclamation-circle ms-1 fs-7" data-bs-toggle="tooltip"
+                                   title="Country of origination"></i></label>
+                            <div class="col-lg-8">
+                                <span class="fw-bold fs-6 text-gray-800">Germany</span>
                             </div>
-                            <div class="row mb-7">
-                                <label class="col-lg-4 fw-semibold text-muted">Communication</label>
-                                <div class="col-lg-8">
-                                    <span class="fw-bold fs-6 text-gray-800">Email, Phone</span>
-                                </div>
+                        </div>
+                        <div class="row mb-7">
+                            <label class="col-lg-4 fw-semibold text-muted">Communication</label>
+                            <div class="col-lg-8">
+                                <span class="fw-bold fs-6 text-gray-800">Email, Phone</span>
                             </div>
-                            <div class="row mb-10">
-                                <label class="col-lg-4 fw-semibold text-muted">Allow Changes</label>
-                                <div class="col-lg-8">
-                                    <span class="fw-semibold fs-6 text-gray-800">Yes</span>
-                                </div>
+                        </div>
+                        <div class="row mb-10">
+                            <label class="col-lg-4 fw-semibold text-muted">Allow Changes</label>
+                            <div class="col-lg-8">
+                                <span class="fw-semibold fs-6 text-gray-800">Yes</span>
                             </div>
-                            <div class="notice d-flex bg-light-warning rounded border-warning border border-dashed p-6">
+                        </div>
+                        <div class="notice d-flex bg-light-warning rounded border-warning border border-dashed p-6">
                                 <span class="svg-icon svg-icon-2tx svg-icon-warning me-4">
 													<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                          xmlns="http://www.w3.org/2000/svg">
@@ -185,14 +184,13 @@
                                                               transform="rotate(-90 11 17)" fill="currentColor"/>
 													</svg>
 												</span>
-                                <div class="d-flex flex-stack flex-grow-1">
-                                    <div class="fw-semibold">
-                                        <h4 class="text-gray-900 fw-bold">We need your attention!</h4>
-                                        <div class="fs-6 text-gray-700">Your payment was declined. To start using tools,
-                                            please
-                                            <a class="fw-bold" href="../../demo1/dist/account/billing.html">Add Payment
-                                                Method</a>.
-                                        </div>
+                            <div class="d-flex flex-stack flex-grow-1">
+                                <div class="fw-semibold">
+                                    <h4 class="text-gray-900 fw-bold">We need your attention!</h4>
+                                    <div class="fs-6 text-gray-700">Your payment was declined. To start using tools,
+                                        please
+                                        <a class="fw-bold" href="../../demo1/dist/account/billing.html">Add Payment
+                                            Method</a>.
                                     </div>
                                 </div>
                             </div>
