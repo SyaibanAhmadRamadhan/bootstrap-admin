@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "50733036b69b3f5ec740a4c878134364",
+    "content-hash": "ffff4521415fce2e000beb0e7f2a65b8",
     "packages": [
         {
             "name": "brick/math",
@@ -1053,6 +1053,90 @@
                 }
             ],
             "time": "2023-12-03T19:50:20+00:00"
+        },
+        {
+            "name": "intervention/image",
+            "version": "2.7.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Intervention/image.git",
+                "reference": "04be355f8d6734c826045d02a1079ad658322dad"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Intervention/image/zipball/04be355f8d6734c826045d02a1079ad658322dad",
+                "reference": "04be355f8d6734c826045d02a1079ad658322dad",
+                "shasum": ""
+            },
+            "require": {
+                "ext-fileinfo": "*",
+                "guzzlehttp/psr7": "~1.1 || ^2.0",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "~0.9.2",
+                "phpunit/phpunit": "^4.8 || ^5.7 || ^7.5.15"
+            },
+            "suggest": {
+                "ext-gd": "to use GD library based image processing.",
+                "ext-imagick": "to use Imagick based image processing.",
+                "intervention/imagecache": "Caching extension for the Intervention Image library"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.4-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Intervention\\Image\\ImageServiceProvider"
+                    ],
+                    "aliases": {
+                        "Image": "Intervention\\Image\\Facades\\Image"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Intervention\\Image\\": "src/Intervention/Image"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Oliver Vogel",
+                    "email": "oliver@intervention.io",
+                    "homepage": "https://intervention.io/"
+                }
+            ],
+            "description": "Image handling and manipulation library with support for Laravel integration",
+            "homepage": "http://image.intervention.io/",
+            "keywords": [
+                "gd",
+                "image",
+                "imagick",
+                "laravel",
+                "thumbnail",
+                "watermark"
+            ],
+            "support": {
+                "issues": "https://github.com/Intervention/image/issues",
+                "source": "https://github.com/Intervention/image/tree/2.7.2"
+            },
+            "funding": [
+                {
+                    "url": "https://paypal.me/interventionio",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/Intervention",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-05-21T17:30:32+00:00"
         },
         {
             "name": "laravel/framework",
@@ -5695,6 +5779,83 @@
                 "source": "https://github.com/webmozarts/assert/tree/1.11.0"
             },
             "time": "2022-06-03T18:03:27+00:00"
+        },
+        {
+            "name": "ylsideas/feature-flags",
+            "version": "v2.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ylsideas/feature-flags.git",
+                "reference": "371350e8729152d43575be9442cc254779eae038"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ylsideas/feature-flags/zipball/371350e8729152d43575be9442cc254779eae038",
+                "reference": "371350e8729152d43575be9442cc254779eae038",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "11.*|10.*",
+                "php": "^8.2"
+            },
+            "require-dev": {
+                "composer/semver": "^3.0",
+                "larastan/larastan": "^2.0|^1.0",
+                "laravel/pint": "^1.0",
+                "nunomaduro/collision": "^8.0|^7.8|^6.0",
+                "orchestra/testbench": "^9.0|^8.0|^7.0",
+                "pestphp/pest": "^1.21|^2.34",
+                "pestphp/pest-plugin-arch": "^2.6",
+                "pestphp/pest-plugin-laravel": "^1.1|^2.3",
+                "phpstan/extension-installer": "^1.1",
+                "phpstan/phpdoc-parser": "^1.15",
+                "phpstan/phpstan-deprecation-rules": "^1.0",
+                "rector/rector": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "YlsIdeas\\FeatureFlags\\FeatureFlagsServiceProvider"
+                    ],
+                    "aliases": {
+                        "Features": "YlsIdeas\\FeatureFlags\\Facades\\Features"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "YlsIdeas\\FeatureFlags\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Peter Fox",
+                    "email": "peter.fox@ylsideas.co",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A Laravel package for handling feature flags",
+            "homepage": "https://github.com/ylsideas/feature-flags",
+            "keywords": [
+                "feature-flags",
+                "ylsideas"
+            ],
+            "support": {
+                "issues": "https://github.com/ylsideas/feature-flags/issues",
+                "source": "https://github.com/ylsideas/feature-flags/tree/v2.6.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/peterfox",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-05-28T05:43:27+00:00"
         }
     ],
     "packages-dev": [
@@ -8917,12 +9078,12 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {},
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": "^8.2"
     },
-    "platform-dev": [],
+    "platform-dev": {},
     "plugin-api-version": "2.6.0"
 }

@@ -53,6 +53,7 @@
                         <span class="menu-title">Dashboards</span>
                     </a>
                 </div>
+
                 <div class="menu-item pt-5">
                     <div class="menu-content">
                         <span class="menu-heading fw-bold text-uppercase fs-7">Pages</span>

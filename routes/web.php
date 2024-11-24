@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\AccountController;
-use App\Http\Controllers\ProfileController;
+use App\Http\Middleware\PermissionRole;
 use Illuminate\Support\Facades\Route;
 
 Route::fallback(function () {
@@ -15,10 +15,7 @@ Route::get('/dashboard', function () {
 Route::middleware('auth')->group(function () {
     Route::get('/account', [AccountController::class, 'index'])->name('account.index');
     Route::get('/account/setting', [AccountController::class, 'setting'])->name('account.setting');
-
-    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+    Route::put('/account/{user}', [AccountController::class, 'update'])->name('account.update');
 });
 
 require __DIR__ . '/auth.php';

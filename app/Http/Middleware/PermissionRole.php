@@ -35,8 +35,6 @@ class PermissionRole
             $permissions = array($permission);
         }
 
-
-
         // Loop through the permissions
         foreach ($permissions as $permission) {
             $temp_permission = ''; // Initialize the variable

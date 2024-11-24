@@ -12,21 +12,25 @@
                             <div class="text-gray-500 fw-semibold fs-6">Your Social Campaigns</div>
                         </div>
                         <div class="row g-3 mb-9">
-                            <div class="col-md-6">
+                            @feature('social-lite.google')
+                            <div class="@feature('social-lite.facebook') col-md-6 @else col-md-12 @endfeature">
                                 <a href="#"
                                    class="btn btn-flex btn-outline btn-text-gray-700 btn-active-color-primary bg-state-light flex-center text-nowrap w-100">
                                     <img alt="Logo" src="{{asset('assets/media/svg/brand-logos/google-icon.svg')}}"
                                          class="h-15px me-3"/>Sign in with Google</a>
                             </div>
-                            <div class="col-md-6">
+                            @endfeature
+                            @feature('social-lite.facebook')
+                            <div class="@feature('social-lite.google') col-md-6 @else col-md-12 @endfeature">
                                 <a href="#"
                                    class="btn btn-flex btn-outline btn-text-gray-700 btn-active-color-primary bg-state-light flex-center text-nowrap w-100">
-                                    <img alt="Logo" src="{{asset('assets/media/svg/brand-logos/apple-black.svg')}}"
+                                    <img alt="Logo" src="{{asset('assets/media/svg/brand-logos/facebook-2.svg')}}"
                                          class="theme-light-show h-15px me-3"/>
                                     <img alt="Logo"
-                                         src="{{asset('assets/media/svg/brand-logos/apple-black-dark.svg')}}"
-                                         class="theme-dark-show h-15px me-3"/>Sign in with Apple</a>
+                                         src="{{asset('assets/media/svg/brand-logos/facebook-2.svg')}}"
+                                         class="theme-dark-show h-15px me-3"/>Sign in with Facebook</a>
                             </div>
+                            @endfeature
                         </div>
                         <div class="separator separator-content my-14">
                             <span class="w-125px text-gray-500 fw-semibold fs-7">Or with email</span>
@@ -53,9 +57,11 @@
                                                 class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
                             </button>
                         </div>
+                        @feature('register')
                         <div class="text-gray-500 text-center fw-semibold fs-6">Not a Member yet?
                             <a href="{{route('register')}}"
                                class="link-primary">Sign up</a></div>
+                        @endfeature
                     </form>
                 </div>
             </div>
